@@ -13,7 +13,6 @@ public class App
     {
         System.out.println( "Hello World!" );
         
-        @SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         Student student1 = (Student) context.getBean("student1");
         
