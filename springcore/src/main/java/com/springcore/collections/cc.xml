@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name = "emp1" class ="com.springcore.collections.Emp">
+		<property name="name" value="Mayur" />
+
+		<property name="phones">
+			<list>
+				<value>3478678534</value>
+				<value>4378365365</value>
+				<value>4585675695</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Pune</value>
+				<value>Mumbai</value>
+				<value>Delhi</value>
+			</set>
+		</property>
+
+	</bean>
+</beans>
