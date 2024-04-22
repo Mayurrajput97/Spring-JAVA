@@ -7,12 +7,6 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		
-//		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-//      Student student1 = (Student) context.getBean("student1");
-
-//      System.out.println(student1);
-		
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 		
 		Student student1 = (Student) context.getBean("student1");
@@ -23,6 +17,5 @@ public class App {
 		System.out.println(student1);
 		System.out.println(student2);
 		System.out.println(student3);
-
 	}
 }
