@@ -13,4 +13,8 @@
 		<property name="prize" value="18" />
 	</bean>
 
+	<bean class="com.springcore.lifecycle.JustIN" name="p1">
+		<property name="prize" value="78" />
+	</bean>
+
 </beans>

@@ -10,9 +10,14 @@ public class Test {
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/bean.xml");
 		
+		context.registerShutdownHook();
 		Just s1 = (Just) context.getBean("s1");
 		System.out.println(s1);
-		context.registerShutdownHook();
+		
+		System.out.println("-----------------------");
+		JustIN p1 = (JustIN) context.getBean("p1");
+		
+		System.out.println(p1);
 	}
 
 }
