@@ -13,5 +13,4 @@
    <constructor-arg value = "Mayur" />
    <constructor-arg value = "23" type = "int"/>
    </bean>
-
 </beans>
