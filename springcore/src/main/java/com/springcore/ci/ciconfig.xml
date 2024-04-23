@@ -11,7 +11,7 @@
    <bean class = "com.springcore.ci.Person" name = "person">
    
    <constructor-arg value = "Mayur" />
-   <constructor-arg value = "23"/>
+   <constructor-arg value = "23" type = "int"/>
    </bean>
 
 </beans>
