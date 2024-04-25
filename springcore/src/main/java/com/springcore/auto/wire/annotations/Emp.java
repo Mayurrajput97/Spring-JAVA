@@ -1,9 +1,11 @@
 package com.springcore.auto.wire.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
 	@Autowired
+	@Qualifier("address11")
 	private Address address;
 
 	public Address getAddress() {
