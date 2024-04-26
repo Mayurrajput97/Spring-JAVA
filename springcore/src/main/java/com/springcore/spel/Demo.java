@@ -19,6 +19,10 @@ public class Demo {
 	// If we want the value Like E , PI from Math Class
 	@Value("#{T(java.lang.Math).PI}")
 	private double p;
+	
+	// Boolean Type 
+	@Value("#{18>7}")
+	private boolean isTrue;
 
 	public int getX() {
 		return x;
@@ -54,7 +58,6 @@ public class Demo {
 
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", p=" + p + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", p=" + p + ", isTrue=" + isTrue + "]";
 	}
-
 }
